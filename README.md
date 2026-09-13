@@ -1,6 +1,6 @@
 # Retail_Sales-Customer_Analytics
 
-2. The tools we will use
+### 01. The tools we will use
 
 We don't need to force every tool into the project. Each tool should have a job.
 
@@ -17,7 +17,7 @@ Tool	Purpose
 
 SQL should answer real business questions, while Python should handle the deeper analytical work.
 
-/Text
+```text
 Retail_Analytics_Project/
 │
 ├── data/
@@ -56,4 +56,4 @@ Retail_Analytics_Project/
 │   └── project_report.md
 │
 └── README.md
-/
+```
