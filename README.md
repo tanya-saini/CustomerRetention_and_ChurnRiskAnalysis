@@ -1,6 +1,81 @@
-# Retail_Sales-Customer_Analytics
+# Customer Retention & Churn Risk Analysis Using RFM and Machine Learning
 
-### 01. The tools we will use
+```text
+                    TRANSACTION DATA
+                           │
+                           ▼
+                   DATA PREPARATION
+                           │
+                           ▼
+                  EXPLORATORY ANALYSIS
+                           │
+             ┌─────────────┴──────────────┐
+             ▼                            ▼
+       SALES / PRODUCT              CUSTOMER BEHAVIOR
+             │                            │
+             │                            ▼
+             │                           RFM
+             │                            │
+             │                            ▼
+             │                    CUSTOMER SEGMENTS
+             │                            │
+             └─────────────┬──────────────┘
+                           ▼
+                 CHURN / RETENTION
+                     DEFINITION
+                           │
+                           ▼
+                    ML PREDICTION
+                           │
+                           ▼
+                 CHURN RISK SCORE
+                           │
+                           ▼
+                 BUSINESS ACTIONS
+```
+
+RFM gives us customer behavioral features and segments.
+
+Then the ML model uses those features to predict a future outcome.
+
+---
+
+define what "churn" means.
+- Churn = 1 → no purchase in next 90 days
+- Churn = 0 → purchased again
+
+Cutoff = 1 September 2011
+
+We calculate each customer's RFM using purchases up to September 1.
+
+Then we look forward.
+
+Retained
+
+Customer makes at least one purchase during the following 90 days.
+
+Churn/inactive
+
+Customer makes no purchase during the following 90 days.
+
+---
+
+Primary model: Logistic Regression
+
+Why?
+
+Because it is:
+
+relatively simple
+highly interpretable
+excellent for a business analytics project
+naturally produces probabilities
+easy to explain to recruiters
+suitable for binary churn prediction
+
+---
+
+  ### 01. The tools we will use
 
 We don't need to force every tool into the project. Each tool should have a job.
 
@@ -54,6 +129,66 @@ Retail_Analytics_Project/
 │
 ├── reports/
 │   └── project_report.md
+
+
+--- 
+
+                       RAW DATA
+                          │
+                          ▼
+                 DATA VALIDATION
+                          │
+                          ▼
+                  PREPROCESSING
+                          │
+                          ▼
+                 CLEAN DATASETS
+                          │
+            ┌─────────────┴─────────────┐
+            ▼                           ▼
+       SALES ANALYSIS             CUSTOMER ANALYSIS
+            │                           │
+            │                           ▼
+            │                          RFM
+            │                           │
+            │                           ▼
+            │                    RFM SEGMENTATION
+            │                           │
+            └─────────────┬─────────────┘
+                          ▼
+                 CHURN DEFINITION
+                          │
+                          ▼
+              RETENTION / CHURN EDA
+                          │
+                          ▼
+              ASSOCIATION ANALYSIS
+                          │
+                          ▼
+                  ML MODEL
+                          │
+                 ┌────────┴────────┐
+                 ▼                 ▼
+          Logistic Regression  Random Forest
+                 │                 │
+                 └────────┬────────┘
+                          ▼
+                   MODEL EVALUATION
+                          │
+                          ▼
+                   CHURN PROBABILITY
+                          │
+                          ▼
+                 BUSINESS SEGMENTS
+                          │
+            ┌─────────────┼─────────────┐
+            ▼             ▼             ▼
+          SQL          POWER BI      EXCEL
+```
+
+---
+
+
 │
 └── README.md
 ```
