@@ -1,4 +1,4 @@
-# Customer Retention & Churn Risk Analysis Using RFM and Machine Learning
+# Customer Retention & Churn Risk Analysis Using RFM and ML
 
 ```text
                     TRANSACTION DATA
