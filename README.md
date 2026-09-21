@@ -189,6 +189,14 @@ Retail_Analytics_Project/
 ---
 
 
-│
-└── README.md
-```
+##  Churn Definition
+
+For this project, churn-risk is defined as non-retention during the
+future observation period.
+
+A customer is classified as:
+
+- **Retained (1):** at least one purchase during September–November 2011.
+- **Churn-risk / Non-retained (0):** no purchase during September–November 2011.
+
+The historical feature period ends on 31 August 2011.
