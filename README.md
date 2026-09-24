@@ -2,9 +2,7 @@
 
 End-to-end analysis of online retailer's transaction data (Dec 2010 – Dec 2011) : cleaning raw sales data, segmenting customers with RFM, and predicting future retention with a Logistic Regression model — surfaced in a Power BI dashboard.
 
-## Objective
-
-Identify which customers are likely to stop purchasing before they actually churn, and turn that into a segmented, actionable retention strategy — rather than reacting to lost customers after the fact.
+**Objective** : Identify which customers are likely to stop purchasing before they actually churn, and turn that into a segmented, actionable retention strategy — rather than reacting to lost customers after the fact.
 
 ## Workflow
 ```text
