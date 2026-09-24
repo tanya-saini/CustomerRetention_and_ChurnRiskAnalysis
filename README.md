@@ -1,4 +1,4 @@
-# Customer Retention & Churn Risk Analysis Using RFM and ML
+# CustomerPulse : Retention & Churn Analysis
 
 ```text
                     TRANSACTION DATA
