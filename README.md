@@ -16,6 +16,15 @@ Raw Transactions → Cleaning → EDA (Sales/Product/Country) → RFM Segmentati
 - Cleaned sales dataset : 524,878 rows (duplicates, cancellations, and invalid price/quantity rows removed)
 - Cleaned customer dataset : 392,692 rows / 4,338 unique customers with a valid Customer ID
 
+## Repository Structure
+
+```text
+├── notebooks/           # 00_project_setup → 07_retention_prediction
+├── dashboard/           # Power BI dashboard screenshots
+├── powerbi/             # Power BI source
+└── README.md
+```
+
 ## Tech Stack
 
 | Tool | Role |
@@ -63,12 +72,3 @@ Raw Transactions → Cleaning → EDA (Sales/Product/Country) → RFM Segmentati
 ![Customer Overview Dashboard](dashboard/retail_overview.png)
 
 ![Churn Risk Dashboard](dashboard/retail_churn_risk.png)
-
-## Repository Structure
-
-```text
-├── notebooks/           # 00_project_setup → 07_retention_prediction
-├── dashboard/           # Power BI dashboard screenshots
-├── powerbi/             # Power BI source
-└── README.md
-```
